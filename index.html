@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>My chess clock</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+        </head>
+
+        <body>
+
+
+            <div id="timer">
+                <div id="title">
+                    <h1>Chess Clock</h1>
+                </div>
+                
+                <div id="btn">
+
+                    <div id="whiteAndBlack">
+                        <div id="whiteSpace">
+                            
+                                <button id="btnBlackPlayer" disabled type = "button">White Time
+                                        <div class="display">
+                                            <p id="minuteW">0</p>
+                                            <p id ="minW">min</p>
+                                        </div>
+                                        <div class="display">
+                                            <p id="secondeW">0</p>
+                                            <p id ="secW">sec</p>
+                                        </div>
+                                </button>
+                            
+                        </div>
+
+                        <div id="blackSpace">
+                            <button id="btnWhitePlayer" disabled type = "button">Black Time
+                                <div class="display">
+                                    <p id="minuteB">0</p>
+                                    <p id ="minB">min</p>
+                                </div>    
+                                <div class="display">
+                                    <p id="secondeB">0</p>
+                                    <p id ="secB">sec</p>
+                                </div>
+                            </button>   
+                        </div>
+                    </div>
+                </div>
+                    <div id="btnAutre">
+                        <button id="btnStop" type = "button">Stop</button>
+                        <button id="btnReset" type = "button">Reset</button>
+                    </div>
+
+                </div>
+            </div>
+                <script type="text/javascript" src="script.js"></script>   
+
+    </body>
+
+</html>

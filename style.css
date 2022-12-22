@@ -1,0 +1,211 @@
+html{
+    margin:0;
+    padding:0;
+}
+#timer {
+    display:  flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: blue;
+  }
+
+#minuteW, #secondeW, #minW, #secW, #secondeB, #secB, #minB, #minuteB{
+    font-size: 2.2em;
+}
+#blackClock, #whiteClock {
+  display : flex;
+  font-size : 1.5em;
+  color: rgb(179, 121, 121); 
+  background-color: #ff6e3d;
+}
+
+.display{
+    display:flex;
+    flex-direction: row;
+    height:20%;
+    margin:0;
+}
+
+#whiteClock {
+  display : flex;
+  font-size : 1.5em;
+  color : black;
+}
+ #whiteSpace {
+  display : flex;
+  flex-direction: column;
+  width:50%;
+  
+ }
+ #blackSpace {
+  display : flex;
+  flex-direction: column;
+  background: black;
+  width:50%;
+ }
+
+ 
+#btn{
+  display:  flex;
+  flex-direction : column;
+  height: 90%;
+}
+
+#btnAutre{
+  display: flex;
+  justify-content:   center;
+
+  color:grey;
+}
+
+#title{
+  display : flex;
+ color : white;
+ font-family: 'Baloo 2', cursive;
+ text-transform: uppercase;
+ background-color: rgb(37, 35, 35);
+  justify-content: center;
+  letter-spacing: 5px;
+}
+
+
+#whiteAndBlack{
+  display:  flex;
+  flex-direction : row;
+  justify-content:   center;
+  width:100%;
+  height:80vh;
+}
+
+#gameOver{
+  color:  white;
+  text-transform: uppercase;
+  font-size:  1.5em;
+  padding-left:  1em;
+  padding-top: 1em;
+
+}
+
+p {
+    padding : 5px;
+}
+
+#btnWhitePlayer{
+    background-color: rgb(26, 26, 26);
+    color:grey;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10%0%0%0%;
+    cursor: pointer;
+    box-shadow: inset 18px -18px 49px #6b6767,
+            inset -18px 18px 49px #1b1a1a;
+}
+#btnBlackPlayer{
+    background-color: rgb(230, 230, 230);
+    color:rgb(20, 18, 18);
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    cursor:pointer;
+    padding:10%0%0%0%;
+    box-shadow: inset 18px -18px 49px #c8b6b6,
+            inset -18px 18px 49px #eae4e4;
+}
+button {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    font-size: 0.8em;
+    font-weight: bolder;
+    font-family: 'Baloo 2', cursive;
+    text-align : auto;
+    color: rgb(0, 0, 0);
+    font-size : 2em;
+  }
+
+
+button:hover {
+  font-size: 2em;
+}
+
+ button:active {
+            
+            color:rgb(167, 136, 22);
+            font-weight: bolder;
+            box-shadow: inset  1px gray;
+            transform: translateY(2px);
+         }
+
+#btnReset{
+  color: #D33300;  
+}
+
+
+@media all and (orientation: portrait) {
+
+ body {
+    background-color: white;
+    height:100vh;
+  }
+
+  #timer {
+    display:  flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    height:100vh;
+
+  }
+
+  #title {
+    height: 10%;
+    font-size: 2rem;
+    box-shadow: inset 0px 0px 30px 5px #CDCAC2, 5px 0px 20px 5px white;
+  }
+
+  #whiteAndBlack {
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width:100%;
+    height:80vh;
+  }
+
+  #whiteSpace, #blackSpace{
+    width: 100%;
+    height:40vh;
+  }
+
+  #btnBlackPlayer, #btnWhitePlayer {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .display{
+    display:flex;
+    flex-direction: row;
+    height:20%;
+    margin:0;
+}
+
+
+  button {
+    font-size: 3rem;
+  }
+
+   button:active {
+            background-color: whitesmoke;
+            color:black;
+            font-size:  3rem;
+            font-weight: bolder;
+            box-shadow: inset  1px gray;
+            transform: translateY(2px);
+         }
+
+    #btnAutre {
+      height: 30vh;
+      box-shadow: inset 0px 0px 30px 5px #CDCAC2, 5px 0px 20px 5px white;
+    }
+}
